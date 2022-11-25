@@ -15,7 +15,7 @@ RSpec.describe JsonSplitter::DataSanitizer do
     end
 
     it "removes non alpha-numerics from bio" do
-      item = { "bio" => "yo   😀 1 😀" }
+      item = { "bio" => "yo   😀 1 😀".dup }
       described_class.sanitize!(item)
       expect(item).to eq({ "bio" => "yo 1" })
     end

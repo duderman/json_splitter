@@ -34,7 +34,7 @@ module JsonSplitter
 
     def clean_bio
       @item
-        .fetch("bio", "")
+        .fetch("bio", "".dup)
         .tap { _1.gsub!(EmojiRegex::Regex, "") }
         .tap { _1.gsub!(/(?![[:alnum:]])/, "") }
         .tap { _1.gsub!(/\s{2,}/, " ") }

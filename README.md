@@ -1,22 +1,38 @@
 # JsonSplitter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/json_splitter`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Splits Big JSONs into a smaller ones
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add json_splitter
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install json_splitter
+```
+$ bundle install
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ rake install
+$ json_splitter
+```
+
+Or just
+
+```
+bundle exec exe/json_splitter
+```
+
+Main command
+
+```
+Usage:
+  json_splitter process FILE
+
+Options:
+  -o, [--output=OUTPUT]          # Folder where to save results
+  -b, [--batch-size=BATCH_SIZE]  # Batch size for generated files
+
+Splits big jsons into smaller ones
+```
 
 ## Development
 
@@ -26,7 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/json_splitter.
+Bug reports and pull requests are welcome on GitHub at https://github.com/duderman/json_splitter.
 
 ## License
 

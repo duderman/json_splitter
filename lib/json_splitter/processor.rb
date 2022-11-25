@@ -3,6 +3,7 @@
 require_relative "config"
 require_relative "reader"
 require_relative "writer"
+require_relative "data_sanitizer"
 require_relative "errors"
 
 module JsonSplitter

@@ -4,6 +4,7 @@ PATH
     json_splitter (0.1.0)
       emoji_regex (~> 3.2)
       json-streamer (~> 2.1)
+      thor (~> 1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -50,9 +51,11 @@ GEM
     rubocop-rspec (2.15.0)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
+    thor (1.2.1)
     unicode-display_width (2.3.0)
 
 PLATFORMS
+  ruby
   x86_64-darwin-20
 
 DEPENDENCIES

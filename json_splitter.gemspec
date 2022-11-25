@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Splits JSON into smaller files"
   spec.homepage = "https://github.com/duderman/json_splitter"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "emoji_regex", "~> 3.2"
   spec.add_dependency "json-streamer", "~> 2.1"
+  spec.add_dependency "thor", "~> 1.2"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html

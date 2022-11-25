@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require_relative "config"
+require_relative "reader"
+require_relative "errors"
 
 module JsonSplitter
   class Processor

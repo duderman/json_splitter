@@ -2,6 +2,6 @@
 
 RSpec.describe JsonSplitter do
   it "has a version number" do
-    expect(JsonSplitter::VERSION).not_to be nil
+    expect(JsonSplitter::VERSION).not_to be_nil
   end
 end
